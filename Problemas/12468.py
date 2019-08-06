@@ -7,6 +7,6 @@ def Main():
 			print(100 - mayor + menor)
 		else:
 			print(mayor - menor)
-		n1, n2 = int(input()), int(input())
+		n1, n2 = map(int, input().split())
 
 Main()
