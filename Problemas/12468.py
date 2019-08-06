@@ -1,5 +1,5 @@
 def Main():
-	n1, n2 = int(input()), int(input())
+	n1, n2 = map(int, input().split())
 	while (n1 != -1 and n2 != -1):
 		menor = min(n1, n2)
 		mayor = max(n1, n2)
