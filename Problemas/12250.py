@@ -2,13 +2,13 @@ diccionario = {"HELLO": "ENGLISH", "HOLA": "SPANISH", "HALLO": "GERMAN", "BONJOU
 
 def Main():
 	string = input()
-	contador = 1
+	contador = 0
 	while (string != "#"):
+		contador += 1
 		try:
 			print("Case " + str(contador) + ": " + diccionario[string])
-			contador += 1
 		except:
-			print("UNKNOWN")
+			print("Case " + str(contador) + ": " + "UNKNOWN")
 		string = input()
 
 Main()
