@@ -4,7 +4,7 @@ def Main():
 		esc1 = s1*s1
 		esc2 = s2*s2
 		esc3 = s3*s3
-		if ((esc1 + esc2 = esc3) or (esc3 + esc2 = esc1) or (esc1 + esc3 = esc2)):
+		if ((esc1 + esc2 == esc3) or (esc3 + esc2 == esc1) or (esc1 + esc3 == esc2)):
 			print("right")
 		else:
 			print("wrong")
