@@ -4,7 +4,7 @@ for i in range(int(input())):
 	contM = line.count('M')
 	contF = line.count('F')
 	f contM == contF and len(line) != 2:
-	  print("LOOP") i
+	  	print("LOOP") i
 	else:
 		print("NO LOOP")	
 """
