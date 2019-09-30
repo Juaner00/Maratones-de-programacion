@@ -36,6 +36,7 @@ def main():
 	for index, char in enumerate(enc):
 		enc[index] = alf[indexOr[index] - shiftMayor]
 	
-	print(''.join(enc))
+	print(''.join(enc), end="")
 	
-main()
+if __name__ == '__main__':
+    main()
