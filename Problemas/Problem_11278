@@ -1,0 +1,22 @@
+def main():
+	qwertyMin = " `1234567890-=qwertyuiop[]\\asdfghjkl;'zxcvbnm,./"
+	qwertyMay = ' ~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:"ZXCVBNM<>?'
+	
+	dvorakMin = " `123qjlmfp/[]456.orsuyb;=\\789aehtdck-0zx,inwvg'"
+	dvorakMay = ' ~!@#QJLMFP?{}$%^>ORSUYB:+|&*(AEHTDCK_)ZX<INWVG"'
+
+	line = input()
+	while len(line):
+		msg = ""
+		for i in line:
+			index = qwertyMin.find(i)
+			if index != -1:
+				msg += dvorakMin[index]
+			else:
+				index = qwertyMay.find(i)
+				msg += dvorakMay[index]
+			
+		print(msg)
+		line = input()
+
+main()
